@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&family=Rubik+Distressed&display=swap");
+
+.gradiente-horizontal,
+.zoom-bazar,
+.main-contactos,
+.main-galeria,
+.main-nosotros,
+.main-pf {
+  background-image: linear-gradient(#1877F2, #F5C33B);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #1877F2;
+  font-family: "Rubik Distressed", system-ui;
+  background-color: blanchedalmond;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  border: none;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header nav {
+  border: none;
+  background-color: #f3f2ee;
+  color: red;
+  font-family: "Rubik Distressed", system-ui;
+}
+
+.header nav div div ul {
+  list-style-type: none;
+  background-color: #f3f2ee;
+}
+
+.header nav div div ul li a {
+  color: black;
+  text-decoration: none;
+  background-color: #f3f2ee;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.nav-link {
+  border: none;
+  color: black;
+  background-color: #f3f2ee;
+}
+
+.nav-item {
+  background-color: #f3f2ee;
+}
+
+.bg-body-tertiary {
+  background-color: #f3f2ee;
+}
+
+.navbar-expand-lg .navbar-nav {
+  flex-direction: row;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+@media (max-width: 991px) {
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.main-index {
+  min-height: 84vh;
+}
+
+.main-index h1 {
+  border: none;
+  text-align: center;
+  color: #1877F2;
+  font-family: "Rubik Distressed", system-ui;
+  background-color: blanchedalmond;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.zoom-bazar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: center;
+}
+
+.zoom-bazar .zoom {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: monospace;
+  box-shadow: 1px 1px 1px 1px gray;
+  padding: 10px;
+  padding-bottom: 10px;
+  margin: 2px;
+}
+
+.zoom-bazar .zoom img {
+  height: 150px;
+}
+
+.zoom-bazar .zoom img:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
+}
+
+.zoom-bazar .zoom .button {
+  padding: 5px;
+  margin: 5px;
+  background-color: black;
+  color: aliceblue;
+  font-family: sans-serif;
+}
+
+.celulares {
+  border: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color: #c6cbc9;
+  padding: 15px;
+}
+
+.celulares div {
+  border: none;
+  border-radius: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  padding: 8px;
+  box-shadow: 1px 1px 1px 1px #e9ebe9;
+}
+
+.celulares div img {
+  height: 150px;
+}
+
+.celulares div img:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
+}
+
+.celulares div p {
+  font-size: 1rem;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: blanchedalmond;
+}
+
+.bg-body-tertiary a {
+  color: black;
+}
+
+@media (max-width: 780px) {
+  h1 {
+    background-color: aqua;
+    font-family: "Rubik Distressed", system-ui;
+    width: 100%;
+  }
+
+  .celulares {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 375px) {
+  .celulares {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-contactos {
+  min-height: 84vh;
+}
+
+.main-contactos .redes {
+  width: auto;
+  height: auto;
+}
+
+.main-contactos .camioneta img {
+  height: 50px;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-contactos .redes {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.main-contactos h2 {
+  background-color: #1877F2;
+  color: black;
+  text-align: center;
+  font-family: "Parisienne", cursive;
+}
+
+.main-contactos h1 {
+  text-align: center;
+  color: #1877F2;
+  font-family: "Rubik Distressed", system-ui;
+  background-color: blanchedalmond;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.main-contactos section {
+  display: flex;
+  align-items: center;
+}
+
+.main-contactos section div a {
+  height: 500%;
+  width: 500%;
+}
+
+.main-contactos section img {
+  max-width: 20%;
+  height: 20%;
+}
+
+.main-contactos section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 775px) {
+  .main-contactos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.main-galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 84vh;
+}
+
+.main-galeria .grid-galeria {
+  display: grid;
+  grid-template-areas: "img1 img1 img2 img2"
+    "img3 img4 img4 img6"
+    "img3 img5 img5 img6";
+  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(4, 300px);
+}
+
+.main-galeria .grid-galeria .img-1 {
+  grid-area: img1;
+}
+
+.main-galeria .grid-galeria .img-1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-galeria .grid-galeria .img-2 {
+  grid-area: img2;
+}
+
+.main-galeria .grid-galeria .img-2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-galeria .grid-galeria .img-3 {
+  grid-area: img3;
+}
+
+.main-galeria .grid-galeria .img-3 img {
+  height: 100%;
+  width: 100%;
+}
+
+.main-galeria .grid-galeria .img-4 {
+  grid-area: img4;
+}
+
+.main-galeria .grid-galeria .img-4 img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-galeria .grid-galeria .img-5 {
+  grid-area: img5;
+}
+
+.main-galeria .grid-galeria .img-5 img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-galeria .grid-galeria .img-6 {
+  grid-area: img6;
+}
+
+.main-galeria .grid-galeria .img-6 img {
+  height: 100%;
+  width: 100%;
+}
+
+.carrucel {
+  display: flex;
+  align-items: center;
+}
+
+.carrucel div {
+  overflow: hidden;
+}
+
+.carrucel div img {
+  height: 500px;
+  width: 500px;
+  align-items: center;
+}
+
+@media (max-width: 1023px) {
+  .main-galeria .grid-galeria {
+    grid-template-areas: "img1 img2"
+      "img3 img4"
+      "img5 img6";
+    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media (max-width: 775px) {
+  .main-galeria .grid-galeria {
+    grid-template-areas: "img1 img2"
+      "img3 img4"
+      "img5 img6";
+    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(2, 200px);
+  }
+
+  .main-galeria .grid-galeria img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 419px) {
+  .main-galeria .grid-galeria {
+    grid-template-areas: "img1"
+      "img2"
+      "img3"
+      "img4"
+      "img5"
+      "img6";
+    grid-template-rows: repeat(6, 200px);
+    grid-template-columns: 1fr;
+  }
+}
+
+.main-nosotros {
+  min-height: 84vh;
+}
+
+.main-nosotros h1 {
+  text-align: center;
+  color: #1877F2;
+  font-family: "Rubik Distressed", system-ui;
+  background-color: blanchedalmond;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.main-nosotros section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-nosotros section div p {
+  width: 100%;
+  text-align: center;
+  text-overflow: hidden;
+}
+
+.main-nosotros section iframe {
+  display: flex;
+  -ms-flex-align: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+@media (max-width: 800px) {
+  .main-nosotros section {
+    text-align: center;
+    text-overflow: hidden;
+  }
+}
+
+@media (max-width: 475px) {
+  .main-nosotros section {
+    text-align: center;
+    text-overflow: hidden;
+  }
+}
+
+.main-pf {
+  min-height: 90vh;
+}
+
+.main-pf h1 {
+  text-align: center;
+  color: #1877F2;
+  font-family: "Rubik Distressed", system-ui;
+  background-color: blanchedalmond;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+div {
+  border: none;
+  padding: 10px;
+}

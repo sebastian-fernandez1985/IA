@@ -1,0 +1,20 @@
+.main-pf {
+    min-height: 90vh;
+    @extend .gradiente-horizontal;
+    h1 {
+        text-align: center;
+        color: $celefixy;
+        font-family: $fuente-titulo;
+        background-color: blanchedalmond;
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+}
+
+div {
+     border: none;
+     padding: 10px;
+}
+
+

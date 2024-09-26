@@ -1,0 +1,119 @@
+.main-index {
+    min-height: 84vh;
+    h1 {
+        border: none;
+        text-align: center;
+        color: $celefixy;
+        font-family: $fuente-titulo;
+        background-color: blanchedalmond;
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+}
+
+.zoom-bazar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    @extend .gradiente-horizontal; 
+
+    .zoom {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: monospace;
+        box-shadow: 1px 1px 1px 1px gray;
+        
+        padding: 10px;
+        padding-bottom: 10px;
+        margin: 2px;
+
+        img {
+            height: 150px;
+            &:hover{
+                transform: scale(1.5);
+                transition: 0.3s;
+            }
+
+        }
+
+        .button {
+            padding: 5px;
+            margin: 5px;
+            
+            background-color: black;
+            color: aliceblue;
+            font-family: sans-serif;
+        }
+    }
+}
+
+.celulares {
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(198, 203, 201);
+    padding: 15px;
+
+    div {
+        border: none;
+        border-radius: 20px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 150px;
+        padding: 8px;
+        box-shadow: 1px 1px 1px 1px rgb(233, 235, 233);
+
+        img {
+            height: 150px;
+            &:hover{
+                transform: scale(1.5);
+                transition: 0.3s;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+    }
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: blanchedalmond;
+
+    a {
+        color: black;
+    }
+}
+
+@media (max-width: 780px) {
+    h1 {
+        background-color: aqua;
+        font-family: $fuente-titulo;
+        width: 100%;
+    }
+
+    .celulares {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media(max-width: 375px) {
+    .celulares {
+        grid-template-columns: 1fr;
+    }
+}

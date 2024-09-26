@@ -1,0 +1,59 @@
+.main-nosotros {
+    @extend .gradiente-horizontal;
+    min-height: 84vh;
+
+    h1 {
+        text-align: center;
+        color: $celefixy;
+        font-family: $fuente-titulo;
+        background-color: blanchedalmond;
+        position: sticky;
+        top: 0;
+        width: 100%;
+
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div {
+            p {
+                width: 100%;
+                text-align: center;
+                text-overflow: hidden;
+            }
+        }
+
+        iframe {
+            display: flex;
+            -ms-flex-align: center;
+            flex-direction: column;
+            padding: 10px;
+
+        }
+    }
+
+}
+
+@media (max-width: 800px) {
+    .main-nosotros section{
+        
+            text-align: center;
+            text-overflow:hidden;
+
+        
+
+    }
+}
+@media (max-width: 475px) {
+    .main-nosotros section{
+        
+            text-align: center;
+            text-overflow:hidden;
+
+        
+
+    }
+}

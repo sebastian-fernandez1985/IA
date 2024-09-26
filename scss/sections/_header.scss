@@ -1,0 +1,56 @@
+.header nav {
+    border: none;
+    background-color: rgb(243, 242, 238);
+    color: red;
+    font-family: $fuente-titulo;
+
+    div {
+        div {
+
+
+            ul {
+                list-style-type: none;
+                background-color: rgb(243, 242, 238);
+
+                li {
+                    a {
+                        color: black;
+                        text-decoration: none;
+                        background-color: rgb(243, 242, 238);
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.nav-link {
+    border: none;
+    color: black;
+    background-color: rgb(243, 242, 238);
+}
+
+.nav-item {
+    background-color: rgb(243, 242, 238);
+}
+
+.bg-body-tertiary {
+
+    background-color: rgb(243, 242, 238);
+
+}
+
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+}
+@media(max-width: 991px){
+    .navbar-expand-lg .navbar-nav{
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
